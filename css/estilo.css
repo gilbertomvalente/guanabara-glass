@@ -6,8 +6,6 @@
 	src: url("../_fonts/bubblegum-sans-regular.otf");
 }
 
-<<<<<<< Updated upstream:_css/estilo.css
-=======
 /* Formatação da página em geral */
 
 * {
@@ -55,10 +53,7 @@ a:hover {
 	text-decoration: underline;
 }
 
->>>>>>> Stashed changes:css/estilo.css
 /* Formatação dO Body */
-
-body {}
 
 div#interface {
 	width: 900px;
@@ -124,13 +119,8 @@ nav#menu ul {
 	position: absolute;
 	list-style: none;
 	text-transform: uppercase;
-<<<<<<< Updated upstream:_css/estilo.css
-	top: -20px;
-	left: 300px;
-=======
 	top: -1.2em;
 	right: 10%;
->>>>>>> Stashed changes:css/estilo.css
 }
 
 nav#menu li {
@@ -166,11 +156,7 @@ section#corpo {
 	width: 500px;
 	float: left;
 	border-right: 1px solid #606060;
-<<<<<<< Updated upstream:_css/estilo.css
-	padding-right: 20px;
-=======
 	padding-right: 3%;
->>>>>>> Stashed changes:css/estilo.css
 }
 
 /* Formatação do article */
@@ -320,9 +306,6 @@ footer#rodape {
 
 footer#rodape p {
 	text-align: center;
-<<<<<<< Updated upstream:_css/estilo.css
-}
-=======
 }
 
 /* ========== MOBILE FIRST ==========*/
@@ -346,4 +329,3 @@ footer#rodape p {
 /* Dispositivos extra large (desktops grandes com 1280px ou mais) */
 
 @media screen and (max-width: 1440px) and (min-width: 1281px) {}
->>>>>>> Stashed changes:css/estilo.css
