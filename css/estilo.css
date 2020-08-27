@@ -6,18 +6,64 @@
 	src: url("../_fonts/bubblegum-sans-regular.otf");
 }
 
-/* Formatação dO Body */
+<<<<<<< Updated upstream:_css/estilo.css
+=======
+/* Formatação da página em geral */
+
+* {
+	margin: 0;
+	padding: 0;
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
+p {
+	font-family: Arial, sans-serif;
+	text-align: justify;
+	text-indent: 3em;
+}
+
+h1 {
+	margin-top: 1em;
+	font-size: 2.5em;
+}
+
+h2 {
+	margin-top: 1em;
+	font-size: 2em;
+}
+
+/* Formatação do BODY e do interface */
 
 body {
 	font-family: Arial, sans-serif;
 	background-color: #dddddd;
 	color: rgba(0, 0, 0, 1);
+	width: 90%;
+	margin: 0 auto;
+	padding: 0;
+	font-size: 1em;
 }
+
+a {
+	color: #606060;
+	text-decoration: none;
+	font-weight: bolder;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+>>>>>>> Stashed changes:css/estilo.css
+/* Formatação dO Body */
+
+body {}
 
 div#interface {
 	width: 900px;
 	background-color: #ffffff;
-	margin: -20px auto 0px auto;
+	margin: -1.3em auto 0px auto;
 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 	padding: 10px;
 }
@@ -78,8 +124,13 @@ nav#menu ul {
 	position: absolute;
 	list-style: none;
 	text-transform: uppercase;
+<<<<<<< Updated upstream:_css/estilo.css
 	top: -20px;
 	left: 300px;
+=======
+	top: -1.2em;
+	right: 10%;
+>>>>>>> Stashed changes:css/estilo.css
 }
 
 nav#menu li {
@@ -115,7 +166,11 @@ section#corpo {
 	width: 500px;
 	float: left;
 	border-right: 1px solid #606060;
+<<<<<<< Updated upstream:_css/estilo.css
 	padding-right: 20px;
+=======
+	padding-right: 3%;
+>>>>>>> Stashed changes:css/estilo.css
 }
 
 /* Formatação do article */
@@ -265,4 +320,30 @@ footer#rodape {
 
 footer#rodape p {
 	text-align: center;
+<<<<<<< Updated upstream:_css/estilo.css
 }
+=======
+}
+
+/* ========== MOBILE FIRST ==========*/
+
+/* SMALL DEVICES - SMARTPHONES (com 360px a 480px)*/
+
+@media screen and (max-width: 480px) and (min-width: 360px) {}
+
+/* SMALL DEVICES - TABLETS  (com 480px a 768px)*/
+
+@media screen and (max-width: 768px) and (min-width: 481px) {}
+
+/* MEDIUM DEVICES - TABLETS & DESKTOPS (com 768px a 960px)*/
+
+@media screen and (max-width: 960px) and (min-width: 769px) {}
+
+/* LARGE DEVICES - WIDE SCREENS  (desktops com 960px a 1280px)*/
+
+@media screen and (max-width: 1280px) and (min-width: 961px) {}
+
+/* Dispositivos extra large (desktops grandes com 1280px ou mais) */
+
+@media screen and (max-width: 1440px) and (min-width: 1281px) {}
+>>>>>>> Stashed changes:css/estilo.css
