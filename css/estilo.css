@@ -20,7 +20,8 @@ p {
 	text-indent: 3em;
 }
 
-h2 {margin: 2%;
+h2 {
+	margin: 2%;
 }
 
 /* Formatação do BODY */
@@ -92,7 +93,7 @@ nav#menu ul {
 	position: absolute;
 	list-style: none;
 	text-transform: uppercase;
-	top: 2%;
+	top: 2.1%;
 	right: 10%;
 }
 
