@@ -10,70 +10,44 @@
         content="Página elaborada baseada no curso HTML5 e CSS3 do Curso em Vídeo, do Gustavo Guanabara, incrementada com técnicas de responsividade">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/estilo.css">
-    <script src="https://kit.fontawesome.com/2b57bfb198.js" crossorigin="anonymous"></script>
     <script language="javascript" src="javascript/funcoes.js"></script>
 </head>
 
 <body>
     <div id="interface">
         <header id="cabecalho">
-
             <hgroup>
                 <h1>Google Glass</h1>
                 <h2>A revolução do Google está chegando</h2>
             </hgroup>
             <img id="icone" src="imagens/glass-oculos-preto-med.png" />
-
-        </header>
-
-        <!-- Menu responsivo  -->
-        <button class="btn-menu"><i class="fa fa-bars fa-lg"></i></button>
-
-        <nav class="menu-resp">
-            <a class="btn-close"><i class="fa fa-times"></i></a>
-
-            <ul>
+            <nav id="menu">
                 <h1>Menu Principal</h1>
-                <li> <a href="index.html">Home</a></li>
-                <li> <a href="specs.html">Especificações</a></li>
-                <li> <a href="fotos.html">Fotos</a></li>
-                <li> <a href="multimidia.html">Multimídia</a></li>
-                <li> <a href="fale-conosco.html">Fale-conosco</a></li>
-            </ul>
-        </nav>
-
-        <!-- Menu desk top  -->
-
-        <nav id="menu">
-            <h1>Menu Principal</h1>
-            <ul>
-                <li onmouseover="mudaFoto('imagens/home.png')"
-                    onmouseout="mudaFoto('imagens/glass-oculos-preto-med.png')">
-                    <a href="index.html">Home</a></li>
-                <li onmouseover="mudaFoto('imagens/especificacoes.png')"
-                    onmouseout="mudaFoto('imagens/glass-oculos-preto-med.png')"><a href="specs.html">Especificações</a>
-                </li>
-                <li onmouseover="mudaFoto('imagens/Fotos.png')"
-                    onmouseout="mudaFoto('imagens/glass-oculos-preto-med.png')">
-                    <a href="fotos.html">Fotos</a></li>
-                <li onmouseover="mudaFoto('imagens/multimidia.png')"
-                    onmouseout="mudaFoto('imagens/glass-oculos-preto-med.png')"><a href="multimidia.html">Multimídia</a>
-                </li>
-                <li onmouseover="mudaFoto('imagens/contato.png')"
-                    onmouseout="mudaFoto('imagens/glass-oculos-preto-med.png')"><a
-                        href="fale-conosco.html">Fale-conosco</a>
-                </li>
-            </ul>
-        </nav>
-
+                <ul>
+                    <li onmouseover="mudaFoto('imagens/home.png')"
+                        onmouseout="mudaFoto('imagens/glass-oculos-preto-med.png')"><a href="index.html">Home</a></li>
+                    <li onmouseover="mudaFoto('imagens/especificacoes.png')"
+                        onmouseout="mudaFoto('imagens/glass-oculos-preto-med.png')"><a
+                            href="specs.html">Especificações</a></li>
+                    <li onmouseover="mudaFoto('imagens/Fotos.png')"
+                        onmouseout="mudaFoto('imagens/glass-oculos-preto-med.png')"><a href="fotos.html">Fotos</a></li>
+                    <li onmouseover="mudaFoto('imagens/multimidia.png')"
+                        onmouseout="mudaFoto('imagens/glass-oculos-preto-med.png')"><a
+                            href="multimidia.html">Multimídia</a></li>
+                    <li onmouseover="mudaFoto('imagens/contato.png')"
+                        onmouseout="mudaFoto('imagens/glass-oculos-preto-med.png')"><a
+                            href="fale-conosco.html">Fale-conosco</a></li>
+                </ul>
+            </nav>
+        </header>
 
         <section id="corpo">
             <article id="noticia-principal">
                 <header id=cabecalho-artigo>
                     <hgroup>
-                        <h6> Tecnologia > Inovações</h6>
-                        <h4> Saiba tudo sobre o Google Glass</h4>
-                        <h5> Por Gustavo Guanabara</h5>
+                        <h4> Tecnologia > Inovações</h4>
+                        <h2> Saiba tudo sobre o Google Glass</h2>
+                        <h3> Por Gustavo Guanabara</h3>
                         <h6 class="direita"> em 23/Abril/2013</h6>
                     </hgroup>
                 </header>
@@ -100,12 +74,12 @@
                 <p>Não há uma data específica e oficial para o dispositivo ser lançado, ainda. Pode ser que ele esteja
                     disponível em demonstrações a partir de 2013, mas seu lançamento para as lojas fica para, pelo
                     menos, 2014. </p>
-                <h2>Especifi<wbr>cações Técnicas</h2>
+                <h2>Especificações Técnicas</h2>
                 <table id="tabelaspec">
                     <caption>Tabela Técnica do Google Glass <span>Mar/2013</span></caption>
                     <tr>
                         <td class="ce">Tela</td>
-                        <td class="cd"> Reso<wbr>lução equiva<wbr>lente a tela de 25"</td>
+                        <td class="cd"> Resolução equivalente a tela de 25"</td>
                     </tr>
                     <tr>
                         <td rowspan="2" class="ce">Camera</td>
@@ -116,11 +90,11 @@
                     </tr>
                     </td>
                     <tr>
-                        <td rowspan="2" class="ce">Conecti<wbr>vidade</td>
+                        <td rowspan="2" class="ce">Conectividade</td>
                         <td class="cd"> Wi-Fi</td>
                     </tr>
                     <tr>
-                        <td class="cd">Blue<wbr>tooth</td>
+                        <td class="cd">Bluetooth</td>
                     </tr>
                     <tr>
                         <td class="ce">Memória Interna</td>
@@ -151,7 +125,7 @@
 
         <aside id="lateral">
 
-            <h6>Outras Notícias Vídeo mais recente </h6>
+            <p>Outras Notícias Vídeo mais recente </p>
 
             <div id="tv-radio">
 
@@ -180,19 +154,6 @@
         </footer>
 
     </div>
-
-    <!-- JQUERY -->
-    <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
-    <script>
-        $(".btn-menu").click(function () {
-            $(".menu-resp").show();
-        });
-        $(".btn-close").click(function () {
-            $(".menu-resp").hide();
-        });
-    </script>
-
-
 </body>
 
 </html>
