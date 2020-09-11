@@ -14,7 +14,6 @@ video#filme {
     width: 20em;
 }
 
-
 audio#musica {
     display: block;
     position: relative;
@@ -49,13 +48,11 @@ audio#musica {
         margin-left: 15em;
     }
 
-
     audio#musica {
         clear: both;
         width: 25em;
         margin-left: -5em;
     }
-
 }
 
 /* SMALL DEVICES - TABLETS  (com 480px a 768px)*/
@@ -79,8 +76,6 @@ audio#musica {
         width: 15em;
         margin-left: -10em;
     }
-
-
 }
 
 /* SMALL DEVICES - SMARTPHONES (com 360px a 480px)*/
@@ -102,13 +97,8 @@ audio#musica {
         width: 10em;
         margin-left: 20em;
     }
-
-
 }
 
 /* SMALL DEVICES (com  até 360px)*/
 
 @media (max-width: 360px) {}
-
-
-}

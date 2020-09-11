@@ -56,16 +56,13 @@ fieldset#pedido {
 
 @media (max-width: 1440px) {}
 
-
 /* LARGE DEVICES - WIDE SCREENS  (desktops com 960px a 1280px)*/
 
 @media (max-width: 1280px) {}
 
-
 /* MEDIUM DEVICES - TABLETS & DESKTOPS (com 768px a 960px)*/
 
 @media (max-width: 960px) {}
-
 
 /* SMALL DEVICES - TABLETS  (com 480px a 768px)*/
 
@@ -87,7 +84,6 @@ fieldset#pedido {
     textarea {
         width: 250px;
     }
-
 }
 
 /* SMALL DEVICES (com  até 360px)*/

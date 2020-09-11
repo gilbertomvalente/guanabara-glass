@@ -16,19 +16,15 @@ iframe#frame-spec::-webkit-scrollbar {
     display: none;
 }
 
-
 /* ========== MOBILE FIRST ==========*/
-
 
 /* Dispositivos extra large (desktops grandes com 1280px ou mais) */
 
 @media (max-width: 1440px) {}
 
-
 /* LARGE DEVICES - WIDE SCREENS  (desktops com 960px a 1280px)*/
 
 @media (max-width: 1280px) {}
-
 
 /* MEDIUM DEVICES - TABLETS & DESKTOPS (com 768px a 960px)*/
 
@@ -50,16 +46,13 @@ iframe#frame-spec::-webkit-scrollbar {
     }
 }
 
-
 /* SMALL DEVICES - TABLETS  (com 480px a 768px)*/
 
 @media (max-width: 768px) {}
 
-
 /* SMALL DEVICES - SMARTPHONES (com 360px a 480px)*/
 
 @media (max-width: 480px) {}
-
 
 /* SMALL DEVICES (com  até 360px)*/
 

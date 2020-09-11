@@ -280,7 +280,6 @@ footer#rodape p {
 
 /* ========== MOBILE FIRST ==========*/
 
-
 /* Dispositivos extra large (desktops grandes com 1280px ou mais) */
 
 @media (max-width: 1440px) {}
@@ -443,8 +442,6 @@ footer#rodape p {
 @media (min-width: 770px) {}
 
   /* esconder menu */
-
-  /*
 
 /* Dispositivos extra large (desktops grandes com 1280px ou mais) */
 
