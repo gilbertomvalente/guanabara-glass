@@ -1,12 +1,12 @@
 @charset "UTF-8";
 
 section#conteudo {
-    width: 1000px;
+    width: 80%;
     margin: auto;
 }
 
 iframe#frame-spec {
-    width: 400px;
+    width: 20%;
     height: 280px;
     border: none;
     overflow: hidden;
@@ -15,3 +15,52 @@ iframe#frame-spec {
 iframe#frame-spec::-webkit-scrollbar {
     display: none;
 }
+
+
+/* ========== MOBILE FIRST ==========*/
+
+
+/* Dispositivos extra large (desktops grandes com 1280px ou mais) */
+
+@media (max-width: 1440px) {}
+
+
+/* LARGE DEVICES - WIDE SCREENS  (desktops com 960px a 1280px)*/
+
+@media (max-width: 1280px) {}
+
+
+/* MEDIUM DEVICES - TABLETS & DESKTOPS (com 768px a 960px)*/
+
+@media (max-width: 960px) {
+
+    iframe#frame-spec {
+        display: none;
+        height: 0px;
+        width: 0%;
+    }
+
+    section#conteudo {
+        width: 100%;
+        margin: auto;
+    }
+
+    #conteudo img {
+        width: 100%;
+    }
+}
+
+
+/* SMALL DEVICES - TABLETS  (com 480px a 768px)*/
+
+@media (max-width: 768px) {}
+
+
+/* SMALL DEVICES - SMARTPHONES (com 360px a 480px)*/
+
+@media (max-width: 480px) {}
+
+
+/* SMALL DEVICES (com  até 360px)*/
+
+@media (max-width: 360px) {}

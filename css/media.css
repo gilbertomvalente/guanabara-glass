@@ -1,24 +1,114 @@
 @charset "UTF-8";
 
 div#tv-radio {
-    width: 900px;
-    height: 580px;
-    margin: auto;
-    background: url(../_imagens/radio-tv.png) no-repeat;
-}
-
-audio#musica {
-    display: block;
-    position: relative;
-    left: 575px;
-    top: 490px;
-    width: 300px;
+    max-width: 850px;
+    height: 550px;
+    background: url(../imagens/radio-tv-peq.jpg) no-repeat;
 }
 
 video#filme {
     display: block;
     position: relative;
-    left: 90px;
-    top: 85px;
-    width: 400px;
+    left: -8.5em;
+    top: -10em;
+    width: 20em;
+}
+
+
+audio#musica {
+    display: block;
+    position: relative;
+    left: 15em;
+    top: 28.5em;
+    width: 17em;
+    height: 2.5em;
+}
+
+/* ========== MOBILE FIRST ==========*/
+
+/* Dispositivos extra large (desktops grandes com 1280px ou mais) */
+
+@media (max-width: 1440px) {}
+
+/* LARGE DEVICES - WIDE SCREENS  (desktops com 960px a 1280px)*/
+
+@media (max-width: 1280px) {}
+
+/* MEDIUM DEVICES - TABLETS & DESKTOPS (com 768px a 960px)*/
+
+@media (max-width: 960px) {
+    div#tv-radio {
+        background: none;
+        width: 36em;
+        margin-left: 5em;
+    }
+
+    video#filme {
+        float: left;
+        width: 30em;
+        margin-left: 15em;
+    }
+
+
+    audio#musica {
+        clear: both;
+        width: 25em;
+        margin-left: -5em;
+    }
+
+}
+
+/* SMALL DEVICES - TABLETS  (com 480px a 768px)*/
+
+@media (max-width: 768px) {
+
+    div#tv-radio {
+        background: none;
+        width: 26em;
+        margin-left: 1em;
+    }
+
+    video#filme {
+        float: left;
+        width: 25em;
+        margin-left: 10em;
+    }
+
+    audio#musica {
+        clear: both;
+        width: 15em;
+        margin-left: -10em;
+    }
+
+
+}
+
+/* SMALL DEVICES - SMARTPHONES (com 360px a 480px)*/
+
+@media (max-width: 480px) {
+
+    div#tv-radio {
+        background: none;
+        width: 5em;
+        margin-left: -30em;
+    }
+
+    video#filme {
+        width: 15em;
+        margin-left: 40em;
+    }
+
+    audio#musica {
+        width: 10em;
+        margin-left: 20em;
+    }
+
+
+}
+
+/* SMALL DEVICES (com  até 360px)*/
+
+@media (max-width: 360px) {}
+
+
 }

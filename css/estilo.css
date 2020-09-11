@@ -280,22 +280,219 @@ footer#rodape p {
 
 /* ========== MOBILE FIRST ==========*/
 
-/* SMALL DEVICES - SMARTPHONES (com 360px a 480px)*/
 
-@media (min-width: 360px) {}
+/* Dispositivos extra large (desktops grandes com 1280px ou mais) */
+
+@media (max-width: 1440px) {}
+
+/* LARGE DEVICES - WIDE SCREENS  (desktops com 960px a 1280px)*/
+
+@media (max-width: 1280px) {}
+
+
+/* LARGE DEVICES - maiores de 960px */
+
+@media (min-width: 961px) {
+
+  .menu-resp {
+    display: none;
+  }
+
+  .btn-menu {
+    visibility: hidden;
+  }
+
+  nav#menu {
+    visibility: visible;
+  }
+
+  #icone {
+    visibility: visible;
+  }
+
+}
+
+/* MEDIUM DEVICES - TABLETS & DESKTOPS (com 768px a 960px)*/
+
+@media (max-width: 960px) {
+
+  nav#menu {
+    visibility: hidden;
+  }
+
+  #icone {
+    visibility: hidden;
+  }
+
+  .btn-menu {
+    visibility: visible;
+    margin-top: -9.5em;
+    width: 56px;
+    height: 56px;
+    float: right;
+    color: rgb(255, 255, 255);
+    border-radius: 56px;
+    cursor: pointer;
+    background: #606060;
+  }
+
+  a.btn-close {
+    font-size: 1.5em;
+    color: rgb(20, 19, 19);
+    float: right;
+    cursor: pointer;
+    margin: 2% 3% 0 0;
+  }
+
+  /* MENU */
+  .menu-resp {
+    width: 20%;
+    position: fixed;
+    top: 2.5%;
+    right: 6.5%;
+    display: none;
+    background: #dddddd;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  }
+
+  .menu-resp h1 {
+    font-size: 1.2em;
+    color: #000;
+    font-family: Arial, sans-serif;
+  }
+
+  .menu-resp ul {
+    text-align: center;
+    list-style: none;
+    text-transform: uppercase;
+  }
+
+  .menu-resp li {
+    background: #fcfafa;
+    margin: 1px;
+  }
+
+  .menu-resp a:hover {
+    color: #ffffff;
+    background: #606060;
+  }
+}
 
 /* SMALL DEVICES - TABLETS  (com 480px a 768px)*/
 
-@media (min-width: 480px) {}
+@media (max-width: 768px) {
+
+
+  /* SMALL DEVICES - SMARTPHONES (com 360px a 480px)*/
+
+@media (min-width: 360px) {}
+
+  @media (max-width: 480px) {
+
+    .menu-resp {
+      width: 33%;
+    }
+
+    .btn-menu {
+      margin-top: -9.5em;
+      width: 56px;
+      height: 56px;
+      float: right;
+      color: rgb(255, 255, 255);
+      border-radius: 56px;
+      cursor: pointer;
+      background: #606060;
+    }
+
+    section#corpo {
+      width: 95%;
+      border: none;
+      margin: 2%;
+    }
+
+    aside#lateral {
+      width: 95%;
+      box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+      margin: 3% auto;
+    }
+
+
+  }
+
+  /* SMALL DEVICES (com  até 360px)*/
+
+  @media (max-width: 360px) {
+
+    .menu-resp {
+      width: 45%;
+    }
+
+    header#cabecalho {
+      height: 8em;
+      background: none;
+    }
+
+    .btn-menu {
+      margin-top: -8.5em;
+    }
+
+  }
 
 /* MEDIUM DEVICES - TABLETS & DESKTOPS (com 768px a 960px)*/
 
 @media (min-width: 770px) {}
 
-/* LARGE DEVICES - WIDE SCREENS  (desktops com 960px a 1280px)*/
+  /* esconder menu */
 
-@media (min-width: 960px) {}
+  /*
 
 /* Dispositivos extra large (desktops grandes com 1280px ou mais) */
 
-@media (min-width: 1280px) {}
+.btn-close {
+	font-size: 1.5em;
+	color: #fff;
+	float: right;
+	cursor: pointer;
+	margin: 2% 3% 0 0;
+}
+
+/* LARGE DEVICES - WIDE SCREENS*/
+
+  /*
+@media screen and (min-width: 1280px) {
+	.btn-menu {
+		display: none;
+	}
+
+	.btn-close {
+		display: none;
+	}
+
+	.menu {
+		width: auto;
+		height: 56px;
+		line-height: 56px;
+		float: right;
+		background-color: #f5f5f5;
+		display: block !important;
+		position: static;
+	}
+
+	.menu li {
+		padding: 0;
+		float: left;
+	}
+
+	.menu li a {
+		color: #130400;
+		font-size: 1em;
+		padding: 15px;
+	}
+
+	.menu li a:hover {
+		border: none;
+		color: #da6709;
+	}
+}
+*/
+}
