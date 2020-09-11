@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/estilo.css">
     <link rel="stylesheet" type="text/css" href="css/fotos.css">
+    <script src="https://kit.fontawesome.com/2b57bfb198.js" crossorigin="anonymous"></script>
     <script language="javascript" src="javascript/funcoes.js"></script>
 </head>
 
@@ -22,24 +23,46 @@
                 <h2>A revolução do Google está chegando</h2>
             </hgroup>
             <img id="icone" src="imagens/fotos.png" />
-            <nav id="menu">
-                <h1>Menu Principal</h1>
-                <ul>
-                    <li onmouseover="mudaFoto('imagens/home.png')" onmouseout="mudaFoto('imagens/fotos.png')"><a
-                            href="index.html">Home</a></li>
-                    <li onmouseover="mudaFoto('imagens/especificacoes.png')" onmouseout="mudaFoto('imagens/fotos.png')">
-                        <a href="specs.html">Especificações</a>
-                    </li>
-                    <li onmouseover="mudaFoto('imagens/Fotos.png')" onmouseout="mudaFoto('imagens/fotos.png')"><a
-                            href="fotos.html">Fotos</a></li>
-                    <li onmouseover="mudaFoto('imagens/multimidia.png')" onmouseout="mudaFoto('imagens/fotos.png')"><a
-                            href="multimidia.html">Multimídia</a>
-                    </li>
-                    <li onmouseover="mudaFoto('imagens/contato.png')" onmouseout="mudaFoto('imagens/fotos.png')">
-                        <a href="fale-conosco.html">Fale-conosco</a></li>
-                </ul>
-            </nav>
+
         </header>
+
+        <!-- Menu responsivo  -->
+        <button class="btn-menu"><i class="fa fa-bars fa-lg"></i></button>
+
+        <nav class="menu-resp">
+            <a class="btn-close"><i class="fa fa-times"></i></a>
+
+            <ul>
+                <ul>
+                    <h1>Menu Principal</h1>
+                    <li> <a href="index.html">Home</a></li>
+                    <li> <a href="specs.html">Especifi<wbr>cações</a></li>
+                    <li> <a href="fotos.html">Fotos</a></li>
+                    <li> <a href="multimidia.html">Multi<wbr>mídia</a></li>
+                    <li> <a href="fale-conosco.html">Fale-<wbr>conosco</a></li>
+                </ul>
+        </nav>
+
+        <!-- Menu desk top  -->
+
+        <nav id="menu">
+            <h1>Menu Principal</h1>
+            <ul>
+                <li onmouseover="mudaFoto('imagens/home.png')" onmouseout="mudaFoto('imagens/fotos.png')"><a
+                        href="index.html">Home</a></li>
+                <li onmouseover="mudaFoto('imagens/especificacoes.png')" onmouseout="mudaFoto('imagens/fotos.png')">
+                    <a href="specs.html">Especificações</a>
+                </li>
+                <li onmouseover="mudaFoto('imagens/Fotos.png')" onmouseout="mudaFoto('imagens/fotos.png')"><a
+                        href="fotos.html">Fotos</a></li>
+                <li onmouseover="mudaFoto('imagens/multimidia.png')" onmouseout="mudaFoto('imagens/fotos.png')"><a
+                        href="multimidia.html">Multimídia</a>
+                </li>
+                <li onmouseover="mudaFoto('imagens/contato.png')" onmouseout="mudaFoto('imagens/fotos.png')">
+                    <a href="fale-conosco.html">Fale-conosco</a>
+                </li>
+            </ul>
+        </nav>
 
         <section id="corpo-full">
 
@@ -53,7 +76,6 @@
                     </hgroup>
                 </header>
 
-
                 <p>Veja na nossa galeria de fotos várias belas imagens que mostram algumas das principais
                     características do Google Glass, como recursos e propriedades que estão impressionando o mundo
                     inteiro. Basta passar o mouse sobre uma das fotos para ver uma versão ampliada e com uma breve
@@ -62,7 +84,7 @@
                     <li id="fotos01"><span> Agenda e lembretes</span></li>
                     <li id="fotos02"><span> Sergey Brin usando o Glass</span></li>
                     <li id="fotos03"><span> Leve e compacto</span></li>
-                    <li id="fotos04"><span> Sensação de uma tela de 50"</span></li>
+                    <li id="fotos04"><span> Sensação numa tela de 50"</span></li>
                     <li id="fotos05"><span> Vários tipos de lente</span></li>
                     <li id="fotos06"><span> Informações importantes</span></li>
                 </ul>
@@ -76,6 +98,15 @@
         </footer>
 
     </div>
+    <!-- JQUERY -->
+    <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script>
+        $(".btn-menu").click(function () {
+            $(".menu-resp").show();
+        });
+        $(".btn-close").click(function () {
+            $(".menu-resp").hide();
+        });
+    </script>
 </body>
-
 </html>

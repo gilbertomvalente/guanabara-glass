@@ -23,7 +23,6 @@ legend {
     font-weight: bold;
     font-family: sans-serif;
     font-weight: 13pt;
-
 }
 
 fieldset {
@@ -36,21 +35,57 @@ fieldset#sexo {
 }
 
 fieldset#usuario {
-    background: url(../_imagens/icone-contato.png) no-repeat 95% 95%;
-
+    background: url(../imagens/icone-contato.png) no-repeat 95% 95%;
 }
 
 fieldset#endereco {
-    background: url(../_imagens/icone-endereco.png) no-repeat 95% 95%;
-
+    background: url(../imagens/icone-endereco.png) no-repeat 95% 95%;
 }
 
-fieldset#mensagem {
-    background: url(../_imagens/icone-mensagem.png) no-repeat 95% 95%;
-
+fieldset#mensagens {
+    background: url(../imagens/icone-mensagem.png) no-repeat 95% 95%;
 }
 
 fieldset#pedido {
-    background: url(../_imagens/icone-pagamento.png) no-repeat 95% 95%;
-
+    background: url(../imagens/icone-pagamento.png) no-repeat 95% 95%;
 }
+
+/* ========== MOBILE FIRST ==========*/
+
+/* Dispositivos extra large (desktops grandes com 1280px ou mais) */
+
+@media (max-width: 1440px) {}
+
+/* LARGE DEVICES - WIDE SCREENS  (desktops com 960px a 1280px)*/
+
+@media (max-width: 1280px) {}
+
+/* MEDIUM DEVICES - TABLETS & DESKTOPS (com 768px a 960px)*/
+
+@media (max-width: 960px) {}
+
+/* SMALL DEVICES - TABLETS  (com 480px a 768px)*/
+
+@media (max-width: 768px) {
+    form {
+        width: 400px;
+        margin: auto;
+    }
+}
+
+/* SMALL DEVICES - SMARTPHONES (com 360px a 480px)*/
+
+@media (max-width: 480px) {
+    form {
+        width: 300px;
+        margin: auto;
+    }
+
+    textarea {
+        width: 250px;
+    }
+}
+
+/* SMALL DEVICES (com  até 360px)*/
+
+@media (max-width: 360px) {}
