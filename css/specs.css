@@ -1,7 +1,6 @@
 @charset "UTF-8";
 
 section#conteudo {
-    width: 1000px;
     margin: auto;
 }
 
@@ -14,4 +13,16 @@ iframe#frame-spec {
 
 iframe#frame-spec::-webkit-scrollbar {
     display: none;
+}
+
+/* MEDIUM DEVICES - TABLETS & DESKTOPS (com 768px a 960px)*/
+
+@media (max-width: 960px) {
+    iframe#frame-spec {
+        display: none;
+    }
+
+    #conteudo img {
+        width: 100%;
+    }
 }

@@ -307,8 +307,11 @@ footer#rodape p {
 
 /* MEDIUM DEVICES - TABLETS & DESKTOPS (com 768px a 960px)*/
 
-@media (max-width: 960px) {
+@media (max-width: 960px) {}
 
+/* SMALL DEVICES - TABLETS  (com 480px a 768px)*/
+
+@media (max-width: 768px) {
   nav#menu {
     visibility: hidden;
   }
@@ -371,11 +374,6 @@ footer#rodape p {
   }
 }
 
-/* SMALL DEVICES - TABLETS  (com 480px a 768px)*/
-
-@media (max-width: 768px) {
-
-
 /* SMALL DEVICES - SMARTPHONES (com 360px a 480px)*/
 
 
@@ -402,11 +400,11 @@ footer#rodape p {
     margin: 2%;
   }
 
-aside#lateral {
-  width: 95%;
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
-  margin: 3% auto;
-}
+  aside#lateral {
+    width: 95%;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    margin: 3% auto;
+  }
 
 
 }
@@ -415,14 +413,15 @@ aside#lateral {
 
 @media (max-width: 360px) {
 
-    .menu-resp {
-      width: 45%;
-    }
+  .menu-resp {
+    width: 45%;
+  }
 
-header#cabecalho {
-  height: 8em;
-  background: none;
-}
+  header#cabecalho {
+    height: 8em;
+    background: none;
+  }
+
   .btn-menu {
     margin-top: -8.5em;
   }
@@ -503,4 +502,4 @@ header#cabecalho {
 		color: #da6709;
 	}
 }
-*/}
+*/
