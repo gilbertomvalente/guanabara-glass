@@ -10,8 +10,8 @@ ul#album-fotos {
 
 ul#album-fotos li {
     float: left;
-    width: 25%;
-    margin: 3%;
+    width: 28%;
+    margin: 2%;
     border: 5px solid #ffffff;
     background-color: #ffffff;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, .4);
@@ -121,18 +121,18 @@ ul#album-fotos li#fotos06:hover {
 
 /* MEDIUM DEVICES - TABLETS & DESKTOPS (com 768px a 960px)*/
 
-@media (max-width: 960px) {}
+@media (max-width: 960px) {
+        ul#album-fotos li {
+            float: left;
+            width: 45%;
+            margin: 3% 1%;
+        }
+
+}
 
 /* SMALL DEVICES - TABLETS  (com 480px a 768px)*/
 
-@media (max-width: 768px) {
-
-    ul#album-fotos li {
-        float: left;
-        width: 40%;
-        margin: 3% 4%;
-    }
-}
+@media (max-width: 768px) {}
 
 /* SMALL DEVICES - SMARTPHONES (com 360px a 480px)*/
 
